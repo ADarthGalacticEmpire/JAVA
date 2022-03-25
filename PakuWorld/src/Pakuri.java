@@ -66,9 +66,16 @@ public class Pakuri implements Comparable<Pakuri>
     //methods for Pakuri class objects
     public void evolve()
     {
+        System.out.println("Attack: " + this.attack);
+        System.out.println("Defense: " + this.defense);
+        System.out.println("Speed: " + this.speed);
+        
         this.attack = getAttack() * 2;
+        System.out.println("Attack: " + this.attack);
         this.defense = getDefense() * 4;
+        System.out.println("Defense: " + this.defense);
         this.speed = getSpeed() * 3;
+        System.out.println("Speed: " + this.speed);
     }
 
     @Override
