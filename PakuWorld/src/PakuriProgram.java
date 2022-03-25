@@ -235,6 +235,13 @@ public class PakuriProgram
 
                         //override the object
                         pakuris.set(positon, evolvePakuri);
+                        
+                        
+                        Pakuri evolvedPakuri = pakuris.get(positon);
+                        System.out.println();
+                        System.out.println("Attack: " + evolvedPakuri.getAttack());
+                        System.out.println("Defense: " + evolvedPakuri.getDefense());
+                        System.out.println("Speed: " + evolvedPakuri.getSpeed());
 
                         System.out.println(pakuriSpecies + " has evolved!");
                     }
