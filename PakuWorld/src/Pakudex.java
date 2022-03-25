@@ -66,6 +66,7 @@ public class Pakudex
     //at indices 0, 1, and 2 respectively; if species is not in the Pakudex, returns null
     public int[] getStats(String species)
     {
+        //todo - do not create new object without getting from the DB
         Pakuri pakuri = new Pakuri(species);
         int[] statsArray = new int[3];
 
